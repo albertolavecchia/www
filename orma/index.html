@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Orma — corri, cammina, conquista</title>
+<meta name="description" content="Orma trasforma ogni corsa o camminata in territorio conquistato su una mappa reale. Sfide giornaliere, leghe, classifiche.">
+<link rel="icon" href="../assets/orma-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<link rel="stylesheet" href="../assets/site.css">
+<style>
+  :root {
+    --brand: #0D9488;
+    --brand-light: #2DD4BF;
+    --brand-dark: #0F766E;
+    --brand-wash: rgba(13, 148, 136, 0.1);
+    --brand-shadow: rgba(13, 148, 136, 0.45);
+    --paper: #F6FAF9;
+    --surface: #FFFFFF;
+    --ink: #12201C;
+    --ink-muted: #4E5F59;
+    --ink-faint: #8CA098;
+    --line: #DCEBE7;
+    --font-display: "Bricolage Grotesque", "Inter", sans-serif;
+    --font-body: "Inter", system-ui, sans-serif;
+    --font-mono: "IBM Plex Mono", monospace;
+    --display-weight: 700;
+  }
+  .hero-band {
+    background:
+      radial-gradient(ellipse 620px 320px at 50% -10%, rgba(45,212,191,0.35), transparent),
+      linear-gradient(180deg, #E6F7F4 0%, var(--paper) 78%);
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-band::before {
+    content: "";
+    position: absolute; inset: 0;
+    background-image: radial-gradient(circle, rgba(13,148,136,0.16) 2.5px, transparent 2.5px);
+    background-size: 34px 34px;
+    mask-image: radial-gradient(ellipse 70% 60% at 50% 20%, black, transparent);
+    opacity: 0.7;
+  }
+  .hero-band > .container { position: relative; }
+  .stat-strip {
+    display: flex; justify-content: center; gap: 34px; flex-wrap: wrap;
+    margin: 6px 0 4px;
+  }
+  .stat-strip div { text-align: center; }
+  .stat-strip strong { display: block; font-family: var(--font-display); font-size: 22px; color: var(--brand-dark); }
+  .stat-strip span { font-size: 12px; color: var(--ink-muted); }
+  .h3-note { font-family: var(--font-mono); font-size: 11.5px; color: var(--brand); background: var(--brand-wash); padding: 3px 10px; border-radius: 999px; }
+</style>
+</head>
+<body>
+  <div class="hero-band">
+    <div class="container">
+      <div class="topnav">
+        <a class="back" href="../">← Tutte le app</a>
+        <a class="wordmark" href="../">Alberto Lavecchia</a>
+      </div>
+      <div class="hero">
+        <img class="hero-icon" src="../assets/orma-icon.png" alt="Icona di Orma">
+        <p class="eyebrow">Gioco GPS di territorio</p>
+        <h1>Ogni passo lascia un'orma.</h1>
+        <p class="tagline">Corri, cammina o fai trail running: il percorso che tracci diventa territorio conquistato su una mappa esagonale reale — condivisa con chiunque giochi vicino a te.</p>
+
+        <div class="downloads">
+          <a class="store-btn" href="#" aria-disabled="true">
+            <span class="glyph">🍎</span>
+            <span class="label"><small>Scarica su</small><strong>App Store</strong></span>
+            <span class="soon">presto</span>
+          </a>
+          <a class="store-btn" href="#" aria-disabled="true">
+            <span class="glyph">▶</span>
+            <span class="label"><small>Disponibile su</small><strong>Google Play</strong></span>
+            <span class="soon">presto</span>
+          </a>
+        </div>
+
+        <div class="stat-strip">
+          <div><strong>~300 m²</strong><span>per cella esagonale</span></div>
+          <div><strong>3 + 1</strong><span>sfide ORMA al giorno</span></div>
+          <div><strong>0€</strong><span>per giocare e conquistare</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <section class="section">
+      <h2>Come funziona</h2>
+      <p class="lede">Colleghi Apple Salute, Health Connect, Strava, Garmin o Polar. Ogni corsa o camminata registrata diventa automaticamente un'area sulla mappa: se il percorso si chiude su se stesso (o Orma lo chiude per te), le celle esagonali al suo interno diventano tue — finché qualcun altro non ci passa sopra, o non le lasci scadere.</p>
+
+      <div class="feature-grid">
+        <div class="feature">
+          <div class="icon">🗺️</div>
+          <div><h3>Territorio reale</h3><p>Non un punteggio astratto: una mappa vera, con le tue celle e quelle di chi gioca vicino a te.</p></div>
+        </div>
+        <div class="feature">
+          <div class="icon">⏳</div>
+          <div><h3>Il territorio scade</h3><p>Le celle non rinnovate tornano libere dopo qualche settimana — un motivo in più per rifare quel giro.</p></div>
+        </div>
+        <div class="feature">
+          <div class="icon">🛡️</div>
+          <div><h3>Leghe</h3><p>Crea o unisciti a una lega, scala la classifica interna, difendi la tua zona da chi prova a conquistarla.</p></div>
+        </div>
+        <div class="feature">
+          <div class="icon">🏆</div>
+          <div><h3>Sfide ORMA</h3><p>Ogni giorno tre celle giornaliere e una settimanale speciale, vicino a dove sei — punti bonus per chi le attraversa, sempre gratis.</p></div>
+        </div>
+        <div class="feature">
+          <div class="icon">📊</div>
+          <div><h3>Statistiche</h3><p>Distanza totale, ritmo medio, calendario delle attività, cronologia di ogni conquista e ogni perdita.</p></div>
+        </div>
+        <div class="feature">
+          <div class="icon">🎨</div>
+          <div><h3>Il tuo stile</h3><p>Colore del territorio e icona del profilo, per farti riconoscere sulla mappa a colpo d'occhio.</p></div>
+        </div>
+      </div>
+
+      <div class="callout-strip">
+        <span class="emoji">🤝</span>
+        <p><strong>Giocare resta sempre gratuito</strong> — Premium sblocca approfondimenti (statistiche avanzate, classifiche extra, colori e icone in più), mai un vantaggio competitivo su chi non paga.</p>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <span>Orma · Alberto Lavecchia</span>
+      <a href="../">Vedi tutte le app →</a>
+    </footer>
+  </div>
+</body>
+</html>

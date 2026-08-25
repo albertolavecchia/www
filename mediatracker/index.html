@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MediaTracker — tutto quello che guardi</title>
+<meta name="description" content="MediaTracker tiene traccia di serie, film, YouTube e podcast in un unico posto, senza inviare i tuoi dati da nessuna parte.">
+<link rel="icon" href="../assets/mediatracker-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;1,6..72,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<link rel="stylesheet" href="../assets/site.css">
+<style>
+  :root {
+    --brand: #6C5CE7;
+    --brand-light: #8C7CFF;
+    --brand-dark: #4E3FC7;
+    --brand-wash: rgba(108, 92, 231, 0.1);
+    --brand-shadow: rgba(108, 92, 231, 0.4);
+    --gold: #F7B500;
+    --paper: #FAFAFC;
+    --surface: #FFFFFF;
+    --ink: #17151F;
+    --ink-muted: #57536A;
+    --ink-faint: #9D99B0;
+    --line: #E9E6F3;
+    --font-display: "Newsreader", Georgia, serif;
+    --font-body: "Inter", system-ui, sans-serif;
+    --font-mono: "IBM Plex Mono", monospace;
+    --display-weight: 600;
+  }
+  .hero-band {
+    background:
+      radial-gradient(ellipse 640px 340px at 50% -8%, rgba(140,124,255,0.32), transparent),
+      linear-gradient(180deg, #F0EEFB 0%, var(--paper) 78%);
+    position: relative; overflow: hidden;
+  }
+  .hero-band::before {
+    content: "★"; position: absolute; font-size: 480px; color: rgba(247,181,0,0.06);
+    top: -160px; right: -100px; font-family: sans-serif; transform: rotate(12deg);
+  }
+  .hero-band > .container { position: relative; }
+  .hero h1 { font-style: italic; }
+  .stars {
+    display: flex; gap: 4px; justify-content: center; color: var(--gold); font-size: 18px; margin-top: -6px;
+  }
+  .type-strip {
+    display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-top: 4px;
+  }
+  .type-pill {
+    font-family: var(--font-mono); font-size: 11.5px; font-weight: 600;
+    padding: 6px 13px; border-radius: 999px; background: var(--surface); border: 1px solid var(--line);
+    color: var(--ink-muted);
+  }
+</style>
+</head>
+<body>
+  <div class="hero-band">
+    <div class="container">
+      <div class="topnav">
+        <a class="back" href="../">← Tutte le app</a>
+        <a class="wordmark" href="../">Alberto Lavecchia</a>
+      </div>
+      <div class="hero">
+        <img class="hero-icon" src="../assets/mediatracker-icon.png" alt="Icona di MediaTracker">
+        <p class="eyebrow">Watchlist multi-media</p>
+        <h1>Tutto quello che guardi,<br>in un solo posto.</h1>
+        <div class="stars">★★★★★</div>
+        <p class="tagline">Serie, film, video YouTube e podcast — voti, commenti e stato di visione, senza dover ricordare dove hai lasciato ogni cosa.</p>
+
+        <div class="type-strip">
+          <span class="type-pill">📺 Serie</span>
+          <span class="type-pill">🎬 Film</span>
+          <span class="type-pill">▶️ YouTube</span>
+          <span class="type-pill">🎙️ Podcast</span>
+        </div>
+
+        <div class="downloads">
+          <a class="store-btn" href="#" aria-disabled="true">
+            <span class="glyph">🍎</span>
+            <span class="label"><small>Scarica su</small><strong>App Store</strong></span>
+            <span class="soon">presto</span>
+          </a>
+          <a class="store-btn" href="#" aria-disabled="true">
+            <span class="glyph">▶</span>
+            <span class="label"><small>Disponibile su</small><strong>Google Play</strong></span>
+            <span class="soon">presto</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <section class="section">
+      <h2>Come funziona</h2>
+      <p class="lede">Cerchi un titolo, lo aggiungi alla tua libreria in uno dei tre stati — da vedere, in corso, visto — e per le serie lo stato si aggiorna da solo man mano che segni gli episodi. Ogni titolo può avere un voto da 0 a 5 stelle e un tuo commento personale.</p>
+
+      <div class="feature-grid">
+        <div class="feature">
+          <div class="icon">🍿</div>
+          <div><h3>Quattro tipi di media</h3><p>Serie TV, film, canali YouTube e podcast — tutti nella stessa libreria, con la stessa logica.</p></div>
+        </div>
+        <div class="feature">
+          <div class="icon">⭐</div>
+          <div><h3>Voti e commenti</h3><p>0-5 stelle e una nota personale per ogni titolo — il tuo diario critico, non un feed pubblico.</p></div>
+        </div>
+        <div class="feature">
+          <div class="icon">📅</div>
+          <div><h3>Calendario e statistiche</h3><p>Cosa hai visto e quando, con un riepilogo delle tue abitudini di visione.</p></div>
+        </div>
+        <div class="feature">
+          <div class="icon">🔒</div>
+          <div><h3>Nessun dato inviato</h3><p>Tutto resta sul telefono — l'accesso con Apple o Google serve solo per riconoscerti, non per raccogliere dati.</p></div>
+        </div>
+        <div class="feature">
+          <div class="icon">🧩</div>
+          <div><h3>Stato automatico</h3><p>Per le serie, "in corso" e "visto" si calcolano da soli in base agli episodi che segni.</p></div>
+        </div>
+        <div class="feature">
+          <div class="icon">🌍</div>
+          <div><h3>Italiano e inglese</h3><p>App completamente localizzata, cambi lingua dalle impostazioni.</p></div>
+        </div>
+      </div>
+
+      <div class="callout-strip">
+        <span class="emoji">🔐</span>
+        <p><strong>Privacy prima di tutto</strong> — nessun account con password, nessun server con i tuoi dati: solo un'identità stabile per riconoscerti, il resto vive sul tuo dispositivo.</p>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <span>MediaTracker · Alberto Lavecchia</span>
+      <a href="../">Vedi tutte le app →</a>
+    </footer>
+  </div>
+</body>
+</html>

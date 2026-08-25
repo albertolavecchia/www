@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BoxTracker — sai sempre dov'è</title>
+<meta name="description" content="BoxTracker organizza le scatole di garage e cantina: scatole, oggetti, luoghi ed etichette stampabili con QR e codice a barre.">
+<link rel="icon" href="../assets/boxtracker-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../assets/site.css">
+<style>
+  :root {
+    --brand: #B98457;
+    --brand-light: #D9B48B;
+    --brand-dark: #8B6239;
+    --brand-wash: rgba(185, 132, 87, 0.12);
+    --brand-shadow: rgba(139, 98, 57, 0.4);
+    --paper: #FAF6F1;
+    --surface: #FFFFFF;
+    --ink: #241B13;
+    --ink-muted: #5C5044;
+    --ink-faint: #9C8E7E;
+    --line: #E9DFD2;
+    --font-display: "Archivo", "Inter", sans-serif;
+    --font-body: "Inter", system-ui, sans-serif;
+    --font-mono: "Space Mono", monospace;
+    --display-weight: 800;
+  }
+  .hero-band {
+    background:
+      radial-gradient(ellipse 620px 320px at 50% -10%, rgba(217,180,139,0.4), transparent),
+      linear-gradient(180deg, #F1E4D2 0%, var(--paper) 78%);
+    position: relative; overflow: hidden;
+  }
+  .hero-band::before {
+    content: "";
+    position: absolute; inset: 0;
+    background-image:
+      repeating-linear-gradient(45deg, rgba(139,98,57,0.05) 0 2px, transparent 2px 26px),
+      repeating-linear-gradient(-45deg, rgba(139,98,57,0.05) 0 2px, transparent 2px 26px);
+    mask-image: radial-gradient(ellipse 70% 60% at 50% 15%, black, transparent);
+  }
+  .hero-band > .container { position: relative; }
+  .hero h1 { text-transform: uppercase; letter-spacing: -0.01em; }
+  .code-chip {
+    font-family: var(--font-mono); font-weight: 700; font-size: 13px;
+    color: var(--brand-dark); background: var(--surface); border: 1.5px dashed var(--brand-light);
+    padding: 6px 14px; border-radius: 10px; letter-spacing: 0.06em;
+  }
+</style>
+</head>
+<body>
+  <div class="hero-band">
+    <div class="container">
+      <div class="topnav">
+        <a class="back" href="../">← Tutte le app</a>
+        <a class="wordmark" href="../">Alberto Lavecchia</a>
+      </div>
+      <div class="hero">
+        <img class="hero-icon" src="../assets/boxtracker-icon.png" alt="Icona di BoxTracker">
+        <p class="eyebrow">Inventario scatole</p>
+        <h1>Sai sempre dov'è.</h1>
+        <p class="tagline">Scatole, oggetti e luoghi organizzati — niente più tre scatoloni aperti in garage per trovare un cacciavite.</p>
+        <span class="code-chip">BX-7F3K9</span>
+
+        <div class="downloads">
+          <a class="store-btn" href="#" aria-disabled="true">
+            <span class="glyph">🍎</span>
+            <span class="label"><small>Scarica su</small><strong>App Store</strong></span>
+            <span class="soon">presto</span>
+          </a>
+          <a class="store-btn" href="#" aria-disabled="true">
+            <span class="glyph">▶</span>
+            <span class="label"><small>Disponibile su</small><strong>Google Play</strong></span>
+            <span class="soon">presto</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <section class="section">
+      <h2>Come funziona</h2>
+      <p class="lede">Ogni scatola ha un codice univoco leggibile, uno stato (aperta o sigillata) e un luogo — con lo storico di dove è stata prima. Dentro, gli oggetti: nome, descrizione, una foto. Quando serve, stampi un'etichetta con QR e codice a barre e la attacchi alla scatola vera.</p>
+
+      <div class="feature-grid">
+        <div class="feature">
+          <div class="icon">📦</div>
+          <div><h3>Scatole tracciate</h3><p>Codice univoco tipo <code>BX-XXXXX</code>, stato aperta/sigillata, luogo attuale e storico spostamenti.</p></div>
+        </div>
+        <div class="feature">
+          <div class="icon">🏷️</div>
+          <div><h3>Etichette stampabili</h3><p>QR code + codice a barre + codice leggibile, pronte da stampare e attaccare sulla scatola.</p></div>
+        </div>
+        <div class="feature">
+          <div class="icon">📍</div>
+          <div><h3>Luoghi</h3><p>Garage, cantina, soffitta: ogni luogo ha un nome, una posizione opzionale e le sue foto.</p></div>
+        </div>
+        <div class="feature">
+          <div class="icon">🔍</div>
+          <div><h3>Ricerca visiva</h3><p>Ritrova un oggetto anche solo dalla foto — l'analisi avviene sul telefono, non nel cloud.</p></div>
+        </div>
+        <div class="feature">
+          <div class="icon">📱</div>
+          <div><h3>Scansiona e trova</h3><p>Inquadra l'etichetta di una scatola per aprirla subito, senza cercare nell'app.</p></div>
+        </div>
+        <div class="feature">
+          <div class="icon">👨‍👩‍👧</div>
+          <div><h3>Condivisione in famiglia</h3><p>Lo stesso inventario visibile a tutta la famiglia — funzione Premium.</p></div>
+        </div>
+      </div>
+
+      <div class="callout-strip">
+        <span class="emoji">✅</span>
+        <p><strong>Nessun limite artificiale</strong> — la versione gratuita organizza scatole, oggetti e luoghi senza tetti massimi. Premium aggiunge la condivisione in famiglia, non toglie nulla a chi non paga.</p>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <span>BoxTracker · Alberto Lavecchia</span>
+      <a href="../">Vedi tutte le app →</a>
+    </footer>
+  </div>
+</body>
+</html>
