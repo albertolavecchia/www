@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Picco — l'app della Pallavolo Lecco Alberto Picco</title>
+<meta name="description" content="Squadre, rose, bacheca allenatori e Picco Card per la società Pallavolo Lecco Alberto Picco.">
+<link rel="icon" href="../assets/picco-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<link rel="stylesheet" href="../assets/site.css">
+<style>
+  :root {
+    --brand: #B8283A;
+    --brand-light: #D9536A;
+    --brand-dark: #8F1D2C;
+    --brand-wash: rgba(184, 40, 58, 0.09);
+    --brand-shadow: rgba(184, 40, 58, 0.4);
+    --gold: #BC9A3F;
+    --paper: #FAF6F1;
+    --surface: #FFFFFF;
+    --ink: #221619;
+    --ink-muted: #6B5A5D;
+    --ink-faint: #A69496;
+    --line: #EEE1DE;
+    --font-display: "Oswald", "Inter", sans-serif;
+    --font-body: "Inter", system-ui, sans-serif;
+    --font-mono: "IBM Plex Mono", monospace;
+    --display-weight: 600;
+  }
+  .hero-band {
+    background:
+      radial-gradient(ellipse 620px 320px at 50% -10%, rgba(184,40,58,0.16), transparent),
+      linear-gradient(180deg, #F7E9E3 0%, var(--paper) 78%);
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-band::before {
+    content: "";
+    position: absolute; inset: 0;
+    background-image: radial-gradient(circle, rgba(184,40,58,0.14) 2.5px, transparent 2.5px);
+    background-size: 34px 34px;
+    mask-image: radial-gradient(ellipse 70% 60% at 50% 20%, black, transparent);
+    opacity: 0.7;
+  }
+  .hero-band > .container { position: relative; }
+  h1, h2, h3 { text-transform: uppercase; letter-spacing: 0.01em; }
+  .h3-note { font-family: var(--font-mono); font-size: 11.5px; color: var(--brand); background: var(--brand-wash); padding: 3px 10px; border-radius: 999px; text-transform: none; letter-spacing: 0.04em; }
+</style>
+</head>
+<body>
+  <div class="hero-band">
+    <div class="container">
+      <div class="topnav">
+        <a class="back" href="../">← Tutte le app</a>
+        <a class="wordmark" href="../">Alberto Lavecchia</a>
+      </div>
+      <div class="hero">
+        <img class="hero-icon" src="../assets/picco-icon.png" alt="Icona di Picco">
+        <p class="eyebrow">App società sportiva</p>
+        <h1>Pallavolo Lecco Alberto Picco</h1>
+        <p class="tagline">Squadre, rose e risultati sempre sottomano, più una bacheca dedicata dove allenatori e dirigenti comunicano direttamente con atleti, genitori e tifosi.</p>
+
+        <div class="downloads">
+          <a class="store-btn" href="#" aria-disabled="true">
+            <span class="glyph">🍎</span>
+            <span class="label"><small>Scarica su</small><strong>App Store</strong></span>
+            <span class="soon">presto</span>
+          </a>
+          <a class="store-btn" href="#" aria-disabled="true">
+            <span class="glyph">▶</span>
+            <span class="label"><small>Disponibile su</small><strong>Google Play</strong></span>
+            <span class="soon">presto</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <section class="section">
+      <h2>Come funziona</h2>
+      <p class="lede">L'app è pensata per chi segue la società da vicino — tifosi, atleti, genitori e dirigenti — e per chi la porta avanti ogni giorno sul campo. Ogni stagione (a partire dal 1971/72) resta consultabile, senza che la nuova cancelli la storia di quella precedente.</p>
+
+      <div class="feature-grid">
+        <div class="feature">
+          <div class="icon">🏐</div>
+          <div><h3>Squadre e rose</h3><p>Ogni squadra della società, con rosa completa (numero, ruolo, anno) e staff tecnico — consultabile da chiunque, senza account.</p></div>
+        </div>
+        <div class="feature">
+          <div class="icon">📣</div>
+          <div><h3>Bacheca squadra</h3><p>Allenatori e dirigenti pubblicano avvisi diretti alla propria squadra — allenamenti, trasferte, comunicazioni. Atleti e genitori li leggono in tempo reale.</p></div>
+        </div>
+        <div class="feature">
+          <div class="icon">👪</div>
+          <div><h3>Anche per i genitori</h3><p>Un genitore collegato dalla società al proprio figlio vede la bacheca della sua squadra, senza dover chiedere in giro cosa si sono persi.</p></div>
+        </div>
+        <div class="feature">
+          <div class="icon">📅</div>
+          <div><h3>Calendario e classifica</h3><p>Per ogni squadra, un link diretto ai dati ufficiali della federazione — sempre aggiornati, mai da controllare a mano.</p></div>
+        </div>
+        <div class="feature">
+          <div class="icon">💳</div>
+          <div><h3>Picco Card</h3><p>La tessera digitale del socio, con gli sconti dei partner della società mostrabile direttamente dal telefono.</p></div>
+        </div>
+        <div class="feature">
+          <div class="icon">🏆</div>
+          <div><h3>Albo d'oro</h3><p>La storia della società, stagione per stagione — dai trofei più recenti a quelli più lontani nel tempo.</p></div>
+        </div>
+      </div>
+
+      <div class="callout-strip">
+        <span class="emoji">🚧</span>
+        <p><strong>App in sviluppo</strong> — realizzata su commissione della Pallavolo Lecco Alberto Picco, non è ancora disponibile sugli store. Questa pagina si aggiornerà con i link al lancio.</p>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <span>Picco · Alberto Lavecchia · <a href="mailto:alberto.lavecchia@libero.it">Assistenza</a></span>
+      <a href="../">Vedi tutte le app →</a>
+    </footer>
+  </div>
+</body>
+</html>

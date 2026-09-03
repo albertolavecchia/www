@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>App di Alberto Lavecchia</title>
-<meta name="description" content="Orma, MediaTracker e BoxTracker — tre app indipendenti, stesso sviluppatore.">
+<meta name="description" content="Orma, MediaTracker, BoxTracker e Picco — quattro app indipendenti, stesso sviluppatore.">
 <link rel="icon" href="data:,">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap">
@@ -31,7 +31,7 @@
   h1 { font-size: clamp(32px, 5.5vw, 44px); font-weight: 800; letter-spacing: -0.02em; margin: 0 0 12px; }
   header.hub p { font-size: 17px; color: var(--ink-muted); max-width: 46ch; margin: 0 auto; }
 
-  .apps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .apps { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 20px; }
   .app-card {
     display: block; text-decoration: none; color: inherit;
     background: var(--surface); border: 1px solid var(--line); border-radius: 22px;
@@ -57,6 +57,7 @@
   .app-card[data-a="orma"] { --card-accent: #0D9488; --card-gradient: linear-gradient(135deg,#2DD4BF,#0D9488); }
   .app-card[data-a="mt"] { --card-accent: #6C5CE7; --card-gradient: linear-gradient(135deg,#8C7CFF,#6C5CE7); }
   .app-card[data-a="bt"] { --card-accent: #B98457; --card-gradient: linear-gradient(135deg,#D9B48B,#B98457); }
+  .app-card[data-a="picco"] { --card-accent: #B8283A; --card-gradient: linear-gradient(135deg,#BC9A3F,#B8283A); }
 
   footer { text-align: center; margin-top: 64px; font-size: 13px; color: var(--ink-faint); }
 
@@ -69,8 +70,8 @@
   <div class="wrap">
     <header class="hub">
       <p class="hub-kicker">Alberto Lavecchia</p>
-      <h1>Tre app, un solo sviluppatore</h1>
-      <p>Ognuna nasce per risolvere un problema concreto — territorio conquistato di corsa, tutto quello che guardi, tutto quello che accumuli in cantina. Scegli quella che ti interessa.</p>
+      <h1>Quattro app, un solo sviluppatore</h1>
+      <p>Ognuna nasce per risolvere un problema concreto — territorio conquistato di corsa, tutto quello che guardi, tutto quello che accumuli in cantina, la vita di una società sportiva. Scegli quella che ti interessa.</p>
     </header>
 
     <div class="apps">
@@ -94,6 +95,13 @@
         <p class="tag">Inventario scatole</p>
         <p class="desc">Non aprire più tre scatole per trovare un cacciavite. Scatole, oggetti e luoghi organizzati, con etichette stampabili pronte da attaccare.</p>
         <span class="cta">Scopri BoxTracker →</span>
+      </a>
+      <a class="app-card" data-a="picco" href="picco/">
+        <img src="assets/picco-icon.png" alt="Icona di Picco">
+        <h2>Picco</h2>
+        <p class="tag">App società sportiva</p>
+        <p class="desc">Squadre, rose, bacheca e Picco Card per la Pallavolo Lecco Alberto Picco. Sviluppata su commissione della società, non un'app personale.</p>
+        <span class="cta">Scopri Picco →</span>
       </a>
     </div>
 
